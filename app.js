@@ -28,13 +28,6 @@ app.use(expressSession({
 var ssn;
 
 
-
-io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
-  });
-});
-
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({
   extended: false
