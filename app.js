@@ -7,7 +7,6 @@ require('dotenv').config({
 const express = require('express');
 var app = require('express')();
 var http = require('http').Server(app);
-
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const expressValidator = require('express-validator');
